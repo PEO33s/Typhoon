@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #0b1f3a; /* Deep ocean blue */
+      font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+      color: #dceeff; /* Soft pale blue for contrast */
+      box-sizing: border-box;
+    }
+
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+      height: 100%;
+    }
+
+    .content {
+      background-color: rgba(220,238,255,0.06); /* translucent misty overlay */
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 16px rgba(11, 31, 58, 0.5); /* subtle depth */
+      max-width: 680px;
+      width: 100%;
+      animation: fadeIn 1s ease-out;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.6;
+      margin: 0;
+      text-align: justify;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .content { padding: 16px; }
+      p { font-size: 15px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <p>
+        A <b>typhoon</b> is a powerful, rotating tropical cyclone with sustained winds of at least <b>118–184 kilometers per hour (kph)</b> that forms over the warm waters of the <b>western Pacific Ocean</b> or <b>northern Indian Ocean</b>.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
